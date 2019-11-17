@@ -11,6 +11,6 @@ driver = webdriver.Chrome('D:/automacao/drivers/chromedriver_win32/chromedriver.
 driver.maximize_window()
 #driver.fullscreen_window()
 driver.get('https://www.uol.com.br')
-driver.save_screenshot('evidencia.png')
+driver.save_screenshot('evidência.png')
 
 driver.quit()
