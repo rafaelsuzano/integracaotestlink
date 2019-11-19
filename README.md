@@ -1,4 +1,4 @@
-# Programa de automatização de teste com integração testlink/selenium
+# Automatização de teste com integração testlink/selenium/chromium-browser
 
 ## Instalar no Ubuntu
 
