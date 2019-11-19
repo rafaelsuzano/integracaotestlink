@@ -9,14 +9,12 @@
 
 ## Configuração 
         
-        Colocar o chromedriver no diretório /usr/bin/
+    Colocar o chromedriver no diretório /usr/bin/
 
 ## Instalar pacote python
 
     pip install selenium
     pip install robotframework-xvfb
-
-
 
 
 ## Fontes:
