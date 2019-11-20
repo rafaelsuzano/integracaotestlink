@@ -3,7 +3,7 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
-
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 #driver = webdriver.Chrome('D:/automacao/drivers/chromedriver_win32/chromedriver.exe')
@@ -16,10 +16,10 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 
 
 
+driver = webdriver.Chrome(ChromeDriverManager().install())
 
 
-
-driver = webdriver.Chrome("/usr/bin/chromedriver",chrome_options=chrome_options)
+#driver = webdriver.Chrome("/usr/bin/chromedriver",chrome_options=chrome_options)
                               
 
 #driver.maximize_window()
