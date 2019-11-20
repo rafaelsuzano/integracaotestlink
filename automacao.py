@@ -27,4 +27,4 @@ driver.get('https://www.uol.com.br')
 driver.save_screenshot("/opt/suzanoit/automacao/evidencias/evidencia.png")
 print("ja foi")
 driver.quit()
- sys.exit(0) # success
+sys.exit()
