@@ -27,5 +27,5 @@ driver.set_window_size(1920, 1080)
 #driver.fullscreen_window()
 driver.get('https://www.uol.com.br')
 driver.save_screenshot('evidencia.png')
-
+print("ja foi")
 driver.quit()
