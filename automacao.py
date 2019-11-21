@@ -37,3 +37,5 @@ newAttachment = tls.uploadTestCaseAttachment(a_file, 4, 4,
 
 print("Teste executado")
 driver.quit()
+
+sys.exit()
