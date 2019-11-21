@@ -10,6 +10,15 @@ import testlink
 SERVER_URL ="http://45.62.235.18:2016//testlink/lib/api/xmlrpc/v1/xmlrpc.php"
 DEVKEY = "fb9af0eb240ddc1f6b7cbc9c93527cd9"
 
+tls = testlink.TestlinkAPIClient(SERVER_URL, DEVKEY)
+tls.about()
+print(tls.countProjects())
+
+
+#TCResult = tls.reportTCResult(4,2,"DEMO","p","passou")
+#TCResult = tls.reportTCResult(8,2,"DEMO","f","Errado")
+#TCResult = tls.reportTCResult(10,2,"DEMO","b","bloqueado")
+
 #driver = webdriver.Chrome('D:/automacao/drivers/chromedriver_win32/chromedriver.exe')
 
 chrome_options = Options()
