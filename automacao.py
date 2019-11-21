@@ -17,7 +17,7 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
-#Configuração do driver do chrome
+#Configuracao do driver do chrome
 driver = webdriver.Chrome("/usr/bin/chromedriver",chrome_options=chrome_options)
 
                           
