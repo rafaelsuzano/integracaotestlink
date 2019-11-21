@@ -15,6 +15,7 @@
 
     pip install selenium
     pip install robotframework-xvfb
+    pip install TestLink-API-Python-client
 
 
 ## Fontes:
