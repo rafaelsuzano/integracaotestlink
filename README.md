@@ -7,6 +7,7 @@
     sudo apt-get install chromium-browser
     sudo apt install python3.7
 
+
 ## Configuração 
         
     Colocar o chromedriver no diretório /usr/bin/
@@ -16,7 +17,9 @@
     pip install selenium
     pip install robotframework-xvfb
     pip install TestLink-API-Python-client
-
+    pip install webdriver-manager
+    pip install webdrivermanager
+    
 
 ## Fontes:
 
