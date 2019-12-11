@@ -19,6 +19,11 @@
     pip install TestLink-API-Python-client
     pip install webdriver-manager
     pip install webdrivermanager
+                ddt
+                data
+                idata
+                file_data
+                unpack
     
 
 ## Fontes:
