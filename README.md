@@ -34,3 +34,6 @@
       https://pypi.org/project/xvfbwrapper/
       https://docs.python-guide.org/starting/install3/linux/
       https://itsfoss.com/install-xfce-desktop-xubuntu/
+
+###
+    Estudar https://www.dev2qa.com/how-to-run-unit-test-use-external-csv-test-data-in-python/
