@@ -14,16 +14,16 @@
 
 ## Instalar pacote python
 
-    pip install selenium
-    pip install robotframework-xvfb
-    pip install TestLink-API-Python-client
-    pip install webdriver-manager
-    pip install webdrivermanager
-                ddt
-                data
-                idata
-                file_data
-                unpack
+pip install selenium
+pip install robotframework-xvfb
+pip install TestLink-API-Python-client
+pip install webdriver-manager
+pip install webdrivermanager
+pip install ddt
+pip install data
+pip install idata
+pip install file_data
+pip install unpack
     
 
 ## Fontes:
