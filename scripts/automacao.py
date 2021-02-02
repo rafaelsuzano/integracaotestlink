@@ -36,7 +36,7 @@ driver = webdriver.Chrome("/usr/bin/chromedriver",chrome_options=chrome_options)
 driver.set_window_size(1920, 1080)
 #driver.fullscreen_window()
 driver.get('https://www.uol.com.br')
-driver.save_screenshot('opt/suzanoi/evidencias/evidencia.png')
+driver.save_screenshot('/opt/suzanoit/automacao/evidencias/evidencia.png')
 
 TCResult = tls.reportTCResult(14,2,"DEMO","p","Teste executado com sucesso !!")
 
