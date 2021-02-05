@@ -3,6 +3,9 @@
 ## Instalar no Ubuntu
 
     sudo apt-get install xvfb
+    sudo apt install xfce4
+
+
     sudo apt-get install jenkins   
     sudo apt-get install chromium-browser
     sudo apt install python3.7
