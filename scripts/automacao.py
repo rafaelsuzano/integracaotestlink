@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import testlink
 
 
-SERVER_URL ="http://45.62.235.18:2016//testlink/lib/api/xmlrpc/v1/xmlrpc.php"
+SERVER_URL ="http://45.62.254.148/testlink/lib/api/xmlrpc/v1/xmlrpc.php"
 DEVKEY = "fb9af0eb240ddc1f6b7cbc9c93527cd9"
 
 tls = testlink.TestlinkAPIClient(SERVER_URL, DEVKEY)
@@ -41,7 +41,7 @@ driver.save_screenshot('/opt/suzanoit/automacao/evidencias/evidencia.png')
 TCResult = tls.reportTCResult(14,2,"DEMO","p","Teste executado com sucesso !!")
 
 a_file=open('/opt/suzanoit/automacao/evidencias/evidencia.png', mode='rb')
-newAttachment = tls.uploadTestCaseAttachment(a_file, 14, 1,
+newAttachment = tls.uploadTestCaseAttachment(a_file, 3, 4,
             title='PNG Example v1', description='PNG Attachment Example for a TestCase v1')
 
 
