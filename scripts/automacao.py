@@ -9,7 +9,7 @@ import testlink
 
 
 SERVER_URL ="http://45.62.254.148/testlink/lib/api/xmlrpc/v1/xmlrpc.php"
-DEVKEY = "db9907181b289ee16e33386f45030efad815fae267fc8d7525ec14da4abefff2"
+DEVKEY = "d49bd40b3f76b589f5b14a036ed4eba3"
 
 tls = testlink.TestlinkAPIClient(SERVER_URL, DEVKEY)
 tls.about()
