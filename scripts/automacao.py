@@ -38,7 +38,7 @@ driver.set_window_size(1920, 1080)
 driver.get('https://www.uol.com.br')
 driver.save_screenshot('/opt/suzanoit/automacao/evidencias/evidencia.png')
 
-TCResult = tls.reportTCResult(14,2,"DEMO","p","Teste executado com sucesso !!")
+TCResult = tls.reportTCResult(3,4,"DEMO","p","Teste executado com sucesso !!")
 
 a_file=open('/opt/suzanoit/automacao/evidencias/evidencia.png', mode='rb')
 newAttachment = tls.uploadTestCaseAttachment(a_file, 3, 4,
