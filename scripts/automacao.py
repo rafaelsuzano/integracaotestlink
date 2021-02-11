@@ -1,6 +1,8 @@
 #D:\automacao\drivers\chromedriver_win32
 import os
 import sys
+from selenium import webdriver
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions
