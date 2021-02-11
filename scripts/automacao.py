@@ -11,9 +11,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-
 import testlink
-
 
 SERVER_URL ="http://142.47.217.91/testlink/lib/api/xmlrpc/v1/xmlrpc.php"
 DEVKEY = "73dd23a931a012880ca6735aefcac8ac"
@@ -21,7 +19,6 @@ DEVKEY = "73dd23a931a012880ca6735aefcac8ac"
 tls = testlink.TestlinkAPIClient(SERVER_URL, DEVKEY)
 tls.about()
 print(tls.countProjects())
-
 
 #TCResult = tls.reportTCResult(4,2,"DEMO","p","passou")
 #TCResult = tls.reportTCResult(8,2,"DEMO","f","Errado")
@@ -48,7 +45,8 @@ driver.save_screenshot('/var/lib/jenkins/workspace/PoC/evidencias/evidencia.png'
 
 TCResult = tls.reportTCResult(4,2,"PoC","p","Teste executado com sucesso !!")
 
-a_file=open('/var/lib/jenkins/workspace/PoC/evidencias/evidencia.png', mode='rb')
+a_file=open('var/lib/jenkins/workspace/PoC/evidencias/evidencia.png', mode='rb')
+
 newAttachment = tls.uploadTestCaseAttachment(a_file, 4, 2,
             title='PNG Example v1', description='PNG Attachment Example for a TestCase v1')
 
