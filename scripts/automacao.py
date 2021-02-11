@@ -42,7 +42,7 @@ driver =  webdriver.Chrome('/usr/local/bin/chromedriver',options=chrome_options)
 driver.set_window_size(1920, 1080)
 #driver.fullscreen_window()
 driver.get('https://www.uol.com.br')
-driver.save_screenshot('var/opt/evidencia/evidencia.png')
+driver.save_screenshot('evidencia.png')
 
 TCResult = tls.reportTCResult(4,2,"PoC","p","Teste executado com sucesso !!")
 
