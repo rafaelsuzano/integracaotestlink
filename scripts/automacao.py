@@ -1,5 +1,6 @@
 #D:\automacao\drivers\chromedriver_win32
 import os
+
 import sys
 from selenium import webdriver
 
@@ -45,10 +46,10 @@ driver.save_screenshot('/var/opt/evidencia/evidencia.png')
 
 TCResult = tls.reportTCResult(4,2,"PoC","p","Teste executado com sucesso !!")
 
-a_file=open('/opt/evidencias/evidencia.png', mode='rb')
+a_file=open(r,'opt/evidencias/evidencia.png')
 
 
-newAttachment = tls.uploadTestCaseAttachment('/opt/evidencias/evidencia.png', 4, 2,
+newAttachment = tls.uploadTestCaseAttachment(a_file', 4, 2,
             title='PNG Example v1', description='PNG Attachment Example for a TestCase v1')
 
 
