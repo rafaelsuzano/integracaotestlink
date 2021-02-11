@@ -46,7 +46,7 @@ driver.save_screenshot('/var/opt/evidencia/evidencia.png')
 
 TCResult = tls.reportTCResult(4,2,"PoC","p","Teste executado com sucesso !!")
 
-a_file=open('opt/evidencias/evidencia.png')
+a_file=open('opt/evidencias/evidencia.png','r')
 
 
 newAttachment = tls.uploadTestCaseAttachment(a_file, 4, 2,
