@@ -13,8 +13,8 @@ from selenium.webdriver.chrome.options import Options
 import testlink
 
 
-SERVER_URL ="http://45.62.254.148/testlink/lib/api/xmlrpc/v1/xmlrpc.php"
-DEVKEY = "d49bd40b3f76b589f5b14a036ed4eba3"
+SERVER_URL ="http://142.47.217.91/testlink/lib/api/xmlrpc/v1/xmlrpc.php"
+DEVKEY = "73dd23a931a012880ca6735aefcac8ac"
 
 tls = testlink.TestlinkAPIClient(SERVER_URL, DEVKEY)
 tls.about()
@@ -44,10 +44,10 @@ driver.set_window_size(1920, 1080)
 driver.get('https://www.uol.com.br')
 driver.save_screenshot('/opt/suzanoit/automacao/evidencias/evidencia.png')
 
-TCResult = tls.reportTCResult(3,5,"POC","p","Teste executado com sucesso !!")
+TCResult = tls.reportTCResult(4,5,"POC","p","Teste executado com sucesso !!")
 
 a_file=open('/opt/suzanoit/automacao/evidencias/evidencia.png', mode='rb')
-newAttachment = tls.uploadTestCaseAttachment(a_file, 3, 5,
+newAttachment = tls.uploadTestCaseAttachment(a_file, 4, 5,
             title='PNG Example v1', description='PNG Attachment Example for a TestCase v1')
 
 
