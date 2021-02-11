@@ -1,10 +1,15 @@
 #D:\automacao\drivers\chromedriver_win32
 import os
 import sys
-from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+
 import testlink
 
 
@@ -28,7 +33,8 @@ chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 
 #Configuracao do driver do chrome
-driver = webdriver.Chrome("/usr/local/bin/chromedriver",chrome_options=chrome_options)
+
+driver =  webdriver.Chrome('/usr/local/bin/chromedriver',options=chrome_options) 
 
                           
 
